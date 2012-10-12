@@ -31,20 +31,20 @@ Quickstart Examples
 Download go-gothub-client and install go-github-client/client:
 
 ```
-$ go get github.com/alcacoop/go-github-client/client
+$ go get github.com/sbinet/go-github-client/client
 ```
 
-This command clone all the repository in "$GOPATH/src/github.com/alcacoop/go-github-client"
-and install "github.com/alcacoop/go-github-client/client" package in "$GOPATH/pkg/ARCH/github.com/alcacoop/go-github-client/client.a"
+This command clone all the repository in "$GOPATH/src/github.com/sbinet/go-github-client"
+and install "github.com/sbinet/go-github-client/client" package in "$GOPATH/pkg/ARCH/github.com/sbinet/go-github-client/client.a"
 
 Now you can "go install" all the other subpackage (or just what you want):
 
 ```
-$ go install github.com/alcacoop/go-github-client/users
+$ go install github.com/sbinet/go-github-client/users
 
-$ go install github.com/alcacoop/go-github-client/gists
+$ go install github.com/sbinet/go-github-client/gists
 
-$ go install github.com/alcacoop/go-github-client/issues
+$ go install github.com/sbinet/go-github-client/issues
 ```
 
 ### go-github-client command line example applications
@@ -52,7 +52,7 @@ $ go install github.com/alcacoop/go-github-client/issues
 You can build and install some example applications using "go install":
 
 ```
-$ go install github.com/alcacoop/go-github-client/examples/gh_get_userinfo
+$ go install github.com/sbinet/go-github-client/examples/gh_get_userinfo
 
 $ $GOPATH/bin/gh_get_userinfo
 ...
@@ -62,7 +62,7 @@ $ $GOPATH/bin/gh_get_userinfo
 
 ```
 import (
-  ghclient "github.com/alcacoop/go-github-client/client"
+  ghclient "github.com/sbinet/go-github-client/client"
 )
 
 ...
@@ -75,7 +75,7 @@ ghc, _ := ghclient.NewGitHubClient("testuser", "password", AUTH_USER_PASSWORD)
 
 ```
 import (
-  ghusers "github.com/alcacoop/go-github-client/users"
+  ghusers "github.com/sbinet/go-github-client/users"
 )
 
 usersc = ghusers.NewUsers(ghc)
@@ -89,7 +89,7 @@ name := jr.GetString("login")
 
 ```
 import (
-  ghgist "github.com/alcacoop/go-github-client/gists"
+  ghgist "github.com/sbinet/go-github-client/gists"
 )
 
 gistsc = ghgists.NewUsers(ghc)
@@ -104,12 +104,12 @@ More Info
 -------------
 
 ### API Reference
-* [Base Client](http://gopkgdoc.appspot.com/pkg/github.com/alcacoop/go-github-client/client)
-* [Users](http://gopkgdoc.appspot.com/pkg/github.com/alcacoop/go-github-client/users)
-* [Gists](http://gopkgdoc.appspot.com/pkg/github.com/alcacoop/go-github-client/gists)
+* [Base Client](http://gopkgdoc.appspot.com/pkg/github.com/sbinet/go-github-client/client)
+* [Users](http://gopkgdoc.appspot.com/pkg/github.com/sbinet/go-github-client/users)
+* [Gists](http://gopkgdoc.appspot.com/pkg/github.com/sbinet/go-github-client/gists)
 
 ### Examples
-* [Usage Examples](https://github.com/alcacoop/go-github-client/tree/master/examples)
+* [Usage Examples](https://github.com/sbinet/go-github-client/tree/master/examples)
 
 
 

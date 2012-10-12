@@ -8,8 +8,8 @@ import (
 	//	"encoding/json"
 	"flag"
 	"fmt"
-	ghclient "github.com/alcacoop/go-github-client/client"
-	ghissues "github.com/alcacoop/go-github-client/issues"
+	ghclient "github.com/sbinet/go-github-client/client"
+	ghissues "github.com/sbinet/go-github-client/issues"
 )
 
 func main() {
